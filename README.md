@@ -23,7 +23,7 @@ The implementation for the rolling horizon optimisation is based on the JuMP tut
 
 Clone the repository by executing the following function
 ```sh
-git clone "https://github.com/tim-powersystems/SchedNEM.jl"
+git clone "https://github.com/ARPST-UniMelb/SchedNEM.jl"
 ```
 
 Then start a Julia REPL within the folder and activate and instantiate the local environment:
