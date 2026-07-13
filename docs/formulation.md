@@ -13,7 +13,7 @@ The data structure is built upon the system model formulation in PRAS [4], with 
 | $D_{b,t}$ | Demand, bus $b$, time $t$ [MW] | `dem` |
 | $\bar{P}_{g,t}$ | Max. power output, generator $g$, time $t$ [MW] | `gen_cap` |
 | $\underline{P}_{g}$ | Min. power output, generator $g$ [MW] | `genData.pmin` |
-| $\bar{F}^{fwd}_{i,t}$, $\bar{F}^{bwd}_{i,t}$ | Max. forward/backward flow, interface $i$, time $t$ [MW] | `interface_limit_forward` / `interface_limit_backward` |
+| $\bar{F}_{i,t}^{fwd/bwd}$ | Max. forward/backward flow, interface $i$, time $t$ [MW] | `interface_limit_forward` / `interface_limit_backward` |
 
 ### 2. Storage parameters
 
@@ -32,7 +32,7 @@ The data structure is built upon the system model formulation in PRAS [4], with 
 
 | Symbol | Description | Code name |
 | --- | --- | --- |
-| $\bar{P}^{GSch}_{gs}$, $\bar{P}^{GSdch}_{gs}$ | Max. charging/discharging power, generator-storage $gs$ [MW] | `genstor_charge_cap` / `genstor_discharge_cap` |
+| $\bar{P}^{GSch / GSdch}_{gs}$ | Max. charging/discharging power, generator-storage $gs$ [MW] | `genstor_charge_cap` / `genstor_discharge_cap` |
 | $\bar{E}_{gs}$ | Max. energy, generator-storage $gs$ [MWh] | `genstor_energy_cap` |
 | $p^{inflow}_{gs,t}$ | External inflows, generator-storage $gs$ [MW] | `genstor_inflow` |
 | $e_{gs,0}$ | Initial state of charge, generator-storage $gs$ [MWh] | `genstor_initial_soc` |
@@ -43,7 +43,7 @@ The data structure is built upon the system model formulation in PRAS [4], with 
 
 | Symbol | Description | Code name |
 | --- | --- | --- |
-| $\bar{P}^{DRbrw}_{dr,t}$, $\bar{P}^{DRpyb}_{dr,t}$ | Max. borrow/payback power, demand-response $dr$, time $t$ [MW] | `drs_borrow_cap` / `drs_payback_cap` |
+| $\bar{P}^{DRbrw/DRpyb}_{dr,t}$| Max. borrow/payback power, demand-response $dr$, time $t$ [MW] | `drs_borrow_cap` / `drs_payback_cap` |
 | $\bar{E}_{dr}$ | Max. energy, demand response $dr$ [MWh] | `drs_energy_cap` |
 | $\bar{E}^{maxBrwHrs}_{dr}$ | Max. energy borrowing activation within time-window $w$, demand response $dr$ [h] | `DER_parameters["DSP_limit_energy_per_window"]["max_energy_per_window_per_capacity"]` |
 | $w$ | Length of the borrowing limit time-window [h] | `DER_parameters["DSP_limit_energy_per_window"]["max_energy_time_window"]` |
@@ -114,7 +114,7 @@ And further optional UC variables (added when `genOpDetails.uc = true`):
 | Symbol | Description | Code name |
 | --- | --- | --- |
 | $\delta^{on}_{g,t}$ | On/off variable for each generator $g$, time $t$ [binary/unitless] | `gon` |
-| $\delta^{stup}_{g,t}$, $\delta^{shdw}_{g,t}$ | Startup/shutdown indicator, generator $g$, time $t$ [binary/unitless] | `stup` / `shdw` |
+| $\delta^{stup/shdw}_{g,t}$ | Startup/shutdown indicator, generator $g$, time $t$ [binary/unitless] | `stup` / `shdw` |
 
 ## Indices and sets
 
