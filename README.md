@@ -20,10 +20,12 @@ The implementation for the rolling horizon optimisation is based on the JuMP tut
 
 
 > [!NOTE]
-> The default solver is HiGHS, however, we recommend using Gurobi to reduce solving time. The optimiser can be specified as optional parameter in `build_operation_model()`.
+> Please note:
+> - The default solver is HiGHS, however, we recommend using Gurobi to reduce solving time. The optimiser can be specified as optional parameter in `build_operation_model()`.
+> - Functions are not exported, i.e. call them fully qualified as `SchedNEM.function_name()`.
 
-> [!NOTE]
-> Functions are not exported, i.e. call them fully qualified as `SchedNEM.function_name()`.
+> [!CAUTION]
+> The current release is fully functional and has been extensively tested; however, bugs or other issues may still arise. We would greatly appreciate any feedback or bug reports submitted via https://github.com/ARPST-UniMelb/SchedNEM.jl/issues 
 
 ## Getting Started
 
