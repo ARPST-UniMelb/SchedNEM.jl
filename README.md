@@ -14,6 +14,12 @@ This repository contains:
 The implementation for the rolling horizon optimisation is based on the JuMP tutorial by Diego Tejada, see [here](https://jump.dev/JuMP.jl/stable/tutorials/algorithms/rolling_horizon/).
 
 > [!NOTE]
+> If you are using this or the related repositories for your work, please cite the final report of AR-PST Stage 5:
+> 
+> T. Kopka, M. Yasirroni, P. Apablaza, B. Moya, S. Mhanna, and P. Mancarella, “Resource Adequacy, Risk, and Resilience in Low-Carbon Energy System Planning: Methods, Tools, and Metrics,” Australian Research in Power Systems Transition (AR-PST), Jun. 2026. [Online]. Available: https://www.csiro.au/en/research/technology-space/energy/Electricity-transition/AR-PST/Stage-5
+
+
+> [!NOTE]
 > The default solver is HiGHS, however, we recommend using Gurobi to reduce solving time. The optimiser can be specified as optional parameter in `build_operation_model()`.
 
 > [!NOTE]
