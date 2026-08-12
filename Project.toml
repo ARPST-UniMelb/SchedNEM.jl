@@ -1,6 +1,6 @@
 name = "SchedNEM"
 uuid = "608957f4-5792-4b67-ab68-b9ace5c79cbf"
-version = "1.0.0"
+version = "0.1.0"
 authors = ["Tim Kopka <tim.kopka@student.unimelb.edu.au> and contributors"]
 
 [deps]
